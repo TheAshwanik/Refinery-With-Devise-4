@@ -1,6 +1,8 @@
 class StaticpagesController < ApplicationController
 
-  def home
+  before_filter :authenticate_user!, :except => [:home,:about, :contact]  
+  
+    def home
   end
 
 
