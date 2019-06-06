@@ -7,7 +7,7 @@ KForum::Application.routes.draw do
   # We ask that you don't use the :as option here, as Refinery relies on it being the default of "refinery"
   mount Refinery::Core::Engine, :at => '/wiki'
 
-  #ActiveAdmin.routes(self)
+  ActiveAdmin.routes(self)
 
   devise_for :users,:sign_out_via => [ :post, :delete ]
   root to: 'staticpages#home'
