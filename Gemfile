@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem "rails", ">= 3.2.17"
 gem 'bootstrap-sass', '2.0.4'
-gem 'will_paginate', '3.0.3'
+gem "will_paginate", ">= 3.0.5"
 gem 'bootstrap-will_paginate', '0.0.6'
 #Refinery
-git 'git://github.com/resolve/refinerycms.git', :branch => '2-0-stable' do
+git 'git://github.com/resolve/refinerycms.git' do
   gem 'refinerycms-core' #You can leave this out if you like. It's a dependency of the other engines.
   gem 'refinerycms-dashboard'
   gem 'refinerycms-images'
@@ -33,8 +33,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails', '~> 2.0.0'
-gem 'devise', '1.4.7'
+gem "jquery-rails", "~> 2.0.0"
+gem "devise", ">= 4.7.1"
 
 group :production do
   gem 'pg', '0.12.2'
